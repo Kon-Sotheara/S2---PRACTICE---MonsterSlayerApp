@@ -37,7 +37,7 @@ function Game() {
 
   // Handles player's regular attack
   const attackHandler = () => {
-    const playerDamage = getRandomValue(10, 18); 
+    const playerDamage = getRandomValue(5, 12); 
     const monsterDamage = getRandomValue(8, 15); 
     setMonsterHealth((prev) => Math.max(prev - playerDamage, 0));
     setPlayerHealth((prev) => Math.max(prev - monsterDamage, 0));
